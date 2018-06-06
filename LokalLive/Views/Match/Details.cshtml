@@ -1,0 +1,64 @@
+﻿@model LokalLive.Models.Match
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Match</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatchId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatchName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatchStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatchEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IntermissionStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IntermissionStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IntermissionEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IntermissionEnd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MatchId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
